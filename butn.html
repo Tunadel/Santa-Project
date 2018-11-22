@@ -7,33 +7,46 @@
     .item {
         display: none;
         border: none;
-        background-color: #787dff;
-        height: 60px;
+        background-color: #f0f0f0;
+        min-height: 60px;
         position: relative;
+        width: 100%;
+        border-radius: 2px;
+        margin: 2px;
+    }
+    .item span {
+        padding: 5px;
+        padding-left: 10px;
+        display: block;
+        margin-right: 60px;
+        font-size: 13px;
     }
     .none {
         display: none;
     }
-    .dropdown-content .item {
-        background-color: #ad44c6;
-       
+    
+    body {
+        font-family: sans-serif;
     }
     
     .select {
         width: 50px;
         height: 100%;
-        background-color: coral;
+        background-color: #5072ff;
         display: block;
         position: absolute;
         right: 0;
         top: 0;
-        transform: translate(0, 0)
+        border-radius: 0px 2px 2px 0px;
+        box-shadow: -2px 0px 1px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
     }
     
     
     .dropdown-content .select img {
         width: 30px;
-        margin-top: 50%;
+        position: absolute;
+        top: 50%;
         margin-left: 50%;
         transform: translate(-50%, -50%) rotate(45deg);
     }
@@ -44,10 +57,86 @@
     
     .rest .select img {
         width: 30px;
-        margin-top: 50%;
+        position: absolute;
+        top: 50%;
         margin-left: 50%;
         transform: translate(-50%, -50%);
     }
+    
+    .dropbtn {
+        width: 100%;
+        height: 40px;
+        color: white;
+        background-color: #f48989;
+        margin: 2px;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .dropbtn span {
+        font-weight: bold;
+        line-height: 40px;
+    }
+    
+    
+    #myInput {
+        width: 100%;
+        margin: 2px;
+        height: 35px;
+        border-style: solid;
+        border-radius: 4px;
+        border-width: 1px;
+        border-color: #777777;
+        text-indent: 10px;
+        
+    }
+    
+    .less {
+        background-color: cadetblue;
+    }
+    
+    
+    
+    .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
     
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,45 +145,102 @@
 </head>
 
 	<body>
+        
+        
+<button id="myBtn">Selecionar objetivos</button>
 
-    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">    
+
+<div id="myModal" class="modal">
+
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+      <input type="text" placeholder="Procurar objetivo.." id="myInput" onkeyup="filterFunction()">    
         
     <div class="dropdown" id="matematica">
-        <button class="dropbtn">Matemática</button>
+        <div class="dropbtn"><span>Objetivos Matemática</span></div>
         <div id="myDropdown" class="dropdown-content">
         <div href="#about" class="item">
-            <span>About</span>
+            <span>CONJUNTOS NUMÉRICOS<br>Encontre 10 situações reais (do cotidiano) nas quais os números estão presentes e depois
+descreva-as. Procure quais são os conjuntos numéricos existentes na matemática. A partir dos
+números registrados, classifique cada um de acordo com seu conjunto numérico.</span>
             <div class="select">
             <img src="interface-images/x.png">
             </div>
         <input value="1" name="objetiv_id[]" style="display: none"/> 
             </div>
         <div href="#base" class="item">
-            <span>Base</span>
+            <span>CONJUNTOS NUMÉRICOS<br>Procure compreender quais são as necessidades e aplicações dos números para as ações
+humanas. Pesquise como ao longo da história os números foram criados e em quais contextos
+surgiram representações novas, que até então não existiam.</span>
             <div class="select">
             <img src="interface-images/x.png">
             </div>
         <input value="2" name="objetiv_id[]" style="display: none"/> 
             </div>
         <div href="#blog" class="item">
-            <span>Blog</span>
+            <span>GEOMETRIA PLANA E ESPACIAL<br>Faça uma lista das figuras e formas geométricas que você conhece. Complete sua lista, através de
+pesquisas, com figuras e formas novas além das citadas por você.
+Fotografe elementos do dia a dia que se assemelhem com cada uma das formas citadas. Por fim,
+classifique cada figura em bidimensional (plana) ou tridimensional (espacial).</span>
             <div class="select">
             <img src="interface-images/x.png">
             </div>
             <input value="3" name="objetiv_id[]" style="display: none"/> 
             </div>
         <div href="#contact" class="item">
-            <span>Contact</span>
+            <span>GEOMETRIA PLANA E ESPACIAL<br>Desenhe, em papel quadriculado, figuras geométricas planas.
+Encontre relações entre seus lados e a quantidade de quadradinhos em seu interior, se necessário
+desenhe mais de uma imagem com tamanhos diferentes.
+Pesquise as fórmulas para o cálculo da área de cada figura desenhada.
+Faça uma análise e descreva a relação entre a fórmula e o cálculo de área a partir da contagem de
+quadradinhos.</span>
             <div class="select">
             <img src="interface-images/x.png">
             </div>
             <input value="4" name="objetiv_id[]" style="display: none"/> 
             </div>
+        <div href="#contact" class="item">
+            <span>GEOMETRIA PLANA E ESPACIAL<br>Construa, com os materiais que desejar, um cubo com 1 centímetro de lado, outro cubo com 1
+decímetro de lado e um terceiro cubo com 1 metro de lado. Escolha objetivos a sua volta e faça
+uma estimativa de seus volumes a partir dos cubos construídos por você.</span>
+            <div class="select">
+            <img src="interface-images/x.png">
+            </div>
+            <input value="5" name="objetiv_id[]" style="display: none"/> 
+            </div>
+        <div href="#contact" class="item">
+            <span>GEOMETRIA PLANA E ESPACIAL<br>Escolha 10 objetos circulares. Meça, em cada objeto, o diâmetro e o seu comprimento. Estabeleça
+relações entre essas medidas.</span>
+            <div class="select">
+            <img src="interface-images/x.png">
+            </div>
+            <input value="6" name="objetiv_id[]" style="display: none"/> 
+            </div>
+        <div href="#contact" class="item">
+            <span>GEOMETRIA PLANA E ESPACIAL<br>Procure embalagens e recipientes que contenham informações de sua capacidade (em litros,
+mililitros, onças fluidas – fl oz, etc). Estabeleça uma relação, para cada situação, com as unidades
+de medida de volume (1 m³, 1 dm³ ou 1 cm³).</span>
+            <div class="select">
+            <img src="interface-images/x.png">
+            </div>
+            <input value="7" name="objetiv_id[]" style="display: none"/> 
+            </div>
+        <div href="#contact" class="item">
+            <span>TRATAMENTO DE INFORMAÇÃO<br>Procure em jornais, revistas ou meios de comunicação gráficos e tabelas que estejam associados a
+alguma informação. Identifique e descreva quais são as informações relacionadas em cada gráfico/ tabela. Escreva um pequeno texto descrevendo as conclusões que você pode chegar a
+partir das informações fornecidas por estes gráficos/ tabelas.</span>
+            <div class="select">
+            <img src="interface-images/x.png">
+            </div>
+            <input value="8" name="objetiv_id[]" style="display: none"/> 
+            </div>
         </div>
     </div>
        
         <div class="dropdown" id="ingles">
-        <button class="dropbtn">Inglês</button>
+        <div class="dropbtn"><span>Objetivos Inglês</span></div>
         <div id="myDropdown" class="dropdown-content">
         <div href="#custom" class="item">
             <span>Custom</span>
@@ -119,11 +265,20 @@
             </div>
         </div>
     </div>
+      
+      
+      
+      
+  </div>
+
+</div>
+    
+        
         
         <br>
         Objetivos
         <br>
-        <form id="class" class="rest" method="POST">
+        <form id="class" class="rest" method="GET">
         
         <button type="submit">Enviar</button>
         </form>
@@ -132,11 +287,14 @@
     var selected = 0;        
             
     $(".dropbtn").click(function(){
+        
         var clickedBtnID = $(this);
         $(this).parent().find('.item').toggle();
+    
     });
 
         function filterFunction() {
+            
           var input, filter, ul, li, a, i;
           input = document.getElementById("myInput");
           filter = input.value.toUpperCase();
@@ -189,9 +347,35 @@
                 $(this).parent().remove();
             });
             
+            
+            
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+            
+            
+            
         </script>
 </body>
 </html>
-
-
-
