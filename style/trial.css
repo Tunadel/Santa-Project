@@ -1,0 +1,634 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+
+
+.head {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    background-color: #28598b;
+    height: 50px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.20);
+}
+
+.close-button img{
+    cursor: pointer;
+    padding: 10px;
+}
+
+.close-button img:hover{
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+.head-logo {
+    top: 0;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.head-logo img{
+    content: url("../interface-images/colegiologobranco.png");
+    height: 40px;
+    padding: 5px;
+    
+}
+
+
+.banner-caixa img{
+    width: 75px;
+    padding: 15px 20px 15px 20px;
+    display: block;
+}
+.banner-caixa span{
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    top: 50%;
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
+    
+}
+
+.perfil-caixa {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    padding: 0px 20px 0px 20px;
+    max-width: 100px;
+    background-color: blue;
+    height: 100%;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 25px;
+    cursor: pointer;
+    
+    
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+}
+
+.perfil-caixa span{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.perfil-caixa:hover{
+    
+    
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.55) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,0.55) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,0.55) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#8c000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+.perfil-caixa span{
+    top: 25%;
+    position: relative;
+    transform: translate(0, 50%);
+    font-size: auto;
+}
+
+
+
+.page-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar-wrapper {
+    margin-top: 50px;
+    position: fixed;
+    background-color: #1f4c79;
+    z-index: 4;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 0;
+    white-space: nowrap;
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.30);
+}
+
+
+.close-button {
+    width: 35px;
+}
+
+.sidebar-wrapper span{
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.30);
+    display: block;
+    width: 100%;
+    height 35px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sidebar-wrapper span:hover{
+}
+
+
+.span-modulo-fundo li {
+    width: 95%;
+    height: 35px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 4px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 1px;
+    text-indent: 15px;
+    color: white;
+    font-size: 15px;
+    line-height: 35px;
+    letter-spacing: 2px;
+    font-family: 'Londrina book', cursive;
+    cursor: pointer;
+}
+
+.span-modulo-fundo li:hover {
+    transition: .3s;
+    border-style: solid;
+    border-color: rgb(50, 50, 50, 0.30);
+    border-width: 3px;
+    border-radius: 4px 3px 4px 0px;
+    border-left: 4px solid rgba(255, 255, 255, 0.50);
+    border-top: none;
+    border-right: none;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 5px rgba(50, 0, 0, 0.4);
+    line-height: 32px;    
+}
+
+.span-modulo-fundo li:active {
+    border: none;
+    box-shadow: 0px 2px 6px inset rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 5px rgba(50, 0, 0, 0.4);
+    line-height: 36px;
+}
+
+.richtexteditor {
+    background-color: white;
+}
+
+.span-modulo-fundo {
+    z-index: 5;
+    margin-top: -5px;
+    margin-bottom: 4px;
+    background-color: rgba(0, 0, 0, 0.25); 
+}
+
+
+
+.perfil-box {
+    display: none;
+    margin-top: 50px;
+    transition: height 1.5s ease-in;
+    position: fixed;
+    height: auto;
+    right: 10px;
+    width: 300px;
+    background-color: #28598b;
+    color: white;
+    z-index: 2;
+    border-radius: 0px 0px 2px 2px;
+    overflow-y: hidden;
+    
+}
+
+.perfil-box input {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    border: none;
+    height: 30px;
+    border-radius: 2px;
+    text-indent: 10px;
+}
+
+.perfil-box .btn {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 25px;
+    background-color: #21a85b;
+    font-family: 'Londrina solid', cursive;
+    letter-spacing: 2px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.perfil-box label {
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-family: 'Londrina book', cursive;
+    margin-left: 30px;
+}
+
+.perfil-box p {
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+}
+
+
+.content {
+    width: 100%;
+    position: absolute;
+    transition: margin-left .5s;
+}
+
+.black-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.30);
+    z-index: 1;
+    display: none;
+}
+
+.content-box {
+    margin-top: 50px;
+    min-width: 80%;
+    max-width: 100%;
+    display: block;
+    z-index: -1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+
+
+.caixa {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 900px;
+    max-width: 900px;
+    min-height: 60px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.completo {
+    background-color: #66b553;
+}
+
+
+.classificacao {
+    margin-bottom: 3px;
+}
+
+.objetivo {
+    width: 100%;
+    min-height: 45px;
+    background-color: white;
+    position: relative;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+
+.objetivo-desc {
+    display: inline-block;
+    width: 76%;
+    margin: 7px 3% 8px 3%;
+    font-size: 13px;
+    
+}
+
+.objetivo-contrato {
+    display: inline-block;
+    width: 6%;
+    height: 100%;
+    left: 82%;
+    box-sizing: border-box;
+    position: absolute;
+    border-left: solid 1.5px #626262;
+    
+}
+
+.objetivo-mais {
+    padding: 6px 10px 10px 10px;
+    background-color: white;
+    display: none;
+    font-size: 11px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.30);
+    border-radius: 0px 0px 4px 4px;
+}
+.objetivo-contrato img {
+    content: url('../interface-images/icon-04.png');
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.outline {
+    border: solid 1.5px #626262;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+.objetivo-sign {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12%;
+    height: 100%;
+    border-radius: 0px 6px 6px 0px;
+    border-left: solid 1.5px #626262;
+    box-sizing: border-box;
+}
+.caixa-invisivel {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 900px;
+    max-width: 900px;
+    min-height: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contrato-mini {
+    text-align: left;
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    margin: 16px 0px 0px 16px;
+    position: relative;
+    border-radius: 5px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+
+.fundo-contrato {
+    content: url('../interface-images/icon-02.png');
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+}
+
+.contrato-date {
+    color: white;
+    position: absolute;
+    top: 0%;
+    margin: 10px;
+}
+.contrato-title {
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    margin: 10px;
+}
+.notification-icon {
+    width: 60px;
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+}
+
+.notification {
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: white;
+}
+
+.input-linha {
+    width: 100%;
+    height: 43.4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-indent: 10px;
+    font-size: 14px;
+}
+
+
+
+.caixa-text {
+    margin: 15px 15px 15px 15px;
+    padding: 10px 10px 10px 10px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+
+.centro {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.esquerda {
+    left: 0;
+}
+
+.direita {
+  right: 0;  
+    transform: translate(-100%, 0);
+}
+.button-big {
+    width: 300px;
+    height: 50px;
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    border: none;
+    color: white;
+    background-color: #07896C;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
+    transition: .3s;
+}
+
+.button-big:hover {
+    border-style: solid;
+    border-color: rgb(50, 50, 50, 0.30);
+    border-width: 5px;
+    border-radius: 4px 3px 4px 0px;
+    border-left: 4px solid rgba(255, 255, 255, 0.50);
+    border-top: none;
+    border-right: none;
+    box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 5px rgba(50, 0, 0, 0.4);
+    line-height: 40px;
+}
+
+.button-big:active {
+    transition: .3s;
+    border: none;
+    box-shadow: 0px 2px 6px inset rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 5px rgba(50, 0, 0, 0.4);
+    
+}
+
+
+
+.escuro {
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+
+.modulo{background-color: #4BD36F}
+.span-trabalho{background-color: #078B93}
+.span-agenda{background-color: #E36666}
+.span-biblioteca{background-color: #B862D9}
+
+
+@media only screen and (max-width: 400px) {
+    .head-logo {
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .head-logo img{
+    content: url(../interface-images/colegiologopequeno.png);
+    }
+    .banner-caixa span{
+    left: 130px;
+    transform: translate(0, -50%);
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .contrato-container {
+    text-align: center;
+    }
+    .contrato-mini {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0px 0px 10px;
+    }
+    .fundo-contrato {
+    width: 120px;
+    }
+    .notification-icon {
+    left: 90%;
+    top: 10%;
+    }
+    .notification {
+        left: 90%;
+        top: 10%;
+    }
+    
+    .caixa {
+        width: 98%;
+    }
+    .perfil-caixa {
+       right: 0; 
+    }
+    
+}
+@media only screen and (min-width: 1150px) {
+    .content-box {
+     margin-left: 250px;
+    }
+    #sidebar-wrapper {
+        width: 250px;
+    }
+    #close-button {
+        display: none;
+    }
+    .head-logo {
+     left: 50px;
+    transform: translate(0, 0);
+    }
+    
+}

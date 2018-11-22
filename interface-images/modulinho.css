@@ -1,0 +1,94 @@
+.banner-modulo {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+}
+.banner-modulo span{
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    top: 50%;
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
+    
+}
+
+.canto-direito {
+    position: absolute;
+    display: block;
+    width: 20%;
+    height: 80%;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.canto-esquerdo {
+    position: absolute;
+    display: block;
+    width: 20%;
+    right: 2%;
+    top: 20%;
+    transform: translate(0, -50%);
+}
+
+.canto-esquerdo span {
+    font-size: 15px;
+    width: 100%;
+    position: absolute;
+    text-align: right;
+}
+
+
+.id-modulo span{
+    font-size: 60px;
+}
+.id-modulo{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.disciplina-modulo{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.disciplina-modulo span {
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .banner-modulo span{
+    font-size: 30px;
+    text-align: center;
+    }
+    .canto-esquerdo span {
+    font-size: 13px;
+    }
+    .canto-direito {
+        left: 12%;
+    }
+    .id-modulo span{
+    font-size: 50px;
+    }
+    .disciplina-modulo span {
+    font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+   .canto-direito {
+        left: 15%;
+    } 
+}

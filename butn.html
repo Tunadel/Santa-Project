@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+    .item {
+        display: none;
+        border: none;
+        background-color: #787dff;
+        height: 60px;
+        position: relative;
+    }
+    .none {
+        display: none;
+    }
+    .dropdown-content .item {
+        background-color: #ad44c6;
+       
+    }
+    
+    .select {
+        width: 50px;
+        height: 100%;
+        background-color: coral;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(0, 0)
+    }
+    
+    
+    .dropdown-content .select img {
+        width: 30px;
+        margin-top: 50%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    
+    .rest .item {
+        
+    }
+    
+    .rest .select img {
+        width: 30px;
+        margin-top: 50%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+</head>
+
+	<body>
+
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">    
+        
+    <div class="dropdown" id="matematica">
+        <button class="dropbtn">Matemática</button>
+        <div id="myDropdown" class="dropdown-content">
+        <div href="#about" class="item">
+            <span>About</span>
+            <div class="select">
+            <img src="interface-images/x.png">
+            </div>
+        <input value="1" name="objetiv_id[]" style="display: none"/> 
+            </div>
+        <div href="#base" class="item">
+            <span>Base</span>
+            <div class="select">
+            <img src="interface-images/x.png">
+            </div>
+        <input value="2" name="objetiv_id[]" style="display: none"/> 
+            </div>
+        <div href="#blog" class="item">
+            <span>Blog</span>
+            <div class="select">
+            <img src="interface-images/x.png">
+            </div>
+            <input value="3" name="objetiv_id[]" style="display: none"/> 
+            </div>
+        <div href="#contact" class="item">
+            <span>Contact</span>
+            <div class="select">
+            <img src="interface-images/x.png">
+            </div>
+            <input value="4" name="objetiv_id[]" style="display: none"/> 
+            </div>
+        </div>
+    </div>
+       
+        <div class="dropdown" id="ingles">
+        <button class="dropbtn">Inglês</button>
+        <div id="myDropdown" class="dropdown-content">
+        <div href="#custom" class="item">
+            <span>Custom</span>
+            <div class="select">
+            <img src="interface-images/x.png">
+            </div>
+            <input value="5" name="objetiv_id[]" style="display: none"/> 
+            </div>
+        <div href="#support" class="item">
+            <span>Support</span>
+            <div class="select">
+            <img src="interface-images/x.png">
+            </div>
+            <input value="6" name="objetiv_id[]" style="display: none"/> 
+            </div>
+        <div href="#tools" class="item">
+            <span>Tools</span>
+            <div class="select">
+            <img src="interface-images/x.png">
+            </div>
+            <input value="7" name="objetiv_id[]" style="display: none"/> 
+            </div>
+        </div>
+    </div>
+        
+        <br>
+        Objetivos
+        <br>
+        <form id="class" class="rest" method="POST">
+        
+        <button type="submit">Enviar</button>
+        </form>
+        
+        <script>
+    var selected = 0;        
+            
+    $(".dropbtn").click(function(){
+        var clickedBtnID = $(this);
+        $(this).parent().find('.item').toggle();
+    });
+
+        function filterFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          div = $(".dropdown-content");
+          a = div.find(".item").children('span');
+          for (i = 0; i < a.length; i++) {
+            if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+              console.log(a[i]);
+              var tem  = a[i];
+              var print = $('.item').has(tem);
+              print.show();
+              console.log(print);
+            } else {
+              var tem  = a[i];
+              var print = $('.item').has(tem);
+              print.hide();
+            }
+          }
+        };
+            
+        $(".dropdown-content").find(".select").click(function(){
+            var $dad = $(this).parent();
+            console.log('clicked');
+            var filter, a, i;
+            a = $("#class");
+            filter = $dad.children("input").val();
+            console.log(filter)
+            if (a.has('.item')) {
+            
+            for (i = 0; i < a.length; i++) {
+                if (a[i].innerHTML.indexOf(filter) > -1) {
+                    console.log('ops');
+                    } else {
+                   
+                    $dad.clone().prependTo("#class");
+                }
+            
+            }
+                
+            } else {
+                console.log('ops2');
+                $dad.clone().prependTo("#class");
+            }
+            
+            });
+            
+            
+            $('#class').delegate('.select','click',function() {
+                console.log('blob');
+                $(this).parent().remove();
+            });
+            
+        </script>
+</body>
+</html>
+
+
+
