@@ -1,182 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<style>
-    .item {
-        display: none;
-        border: none;
-        background-color: #f0f0f0;
-        min-height: 60px;
-        position: relative;
-        width: 98%;
-        border-radius: 4px;
-        margin: 1%;    
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
-    .item span {
-        padding: 10px;
-        padding-top: 20px;
-        padding-left: 15px;
-        display: block;
-        margin-right: 60px;
-        font-size: 13px;
-    }
-    .none {
-        display: none;
-    }
-    
-    body {
-        font-family: sans-serif;
-    }
-    
-    .tituloitem {
-        text-indent: 10px;
-        line-height: 30px;
-        color: white;
-        width: 100%;
-        height: 28px;
-        display: block;
-        top: 0;
-        left: 0;
-        position: absolute;
-        border-radius: 4px 4px 0px 0px;
-        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
-    }
-    
-    .cor1 {
-        background-color: #c64966;
-    }
-    .cor2 {
-        background-color: #be508a;
-    }
-    .cor3 {
-        background-color: #897144;
-    }
-    .select {
-        width: 50px;
-        height: 100%;
-        background-color: #5072ff;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        border-radius: 0px 4px 4px 0px;
-        box-shadow: -2px 0px 1px rgba(0, 0, 0, 0.15);
-        cursor: pointer;
-    }
-    
-    
-    .dropdown-content .select img {
-        width: 30px;
-        position: absolute;
-        top: 50%;
-        margin-left: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
-    
-    .rest .item {
-        
-    }
-    
-    .rest .select img {
-        width: 30px;
-        position: absolute;
-        top: 50%;
-        margin-left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .dropbtn {
-        width: 100%;
-        height: 40px;
-        color: white;
-        background-color: #4BD36F;
-        margin: 2px;
-        margin-bottom: 4px;
-        border-radius: 4px;
-        text-align: center;
-        font-size: 20px;
-        cursor: pointer;
-    }
-    
-    .dropbtn span {
-        font-weight: bold;
-        line-height: 40px;
-    }
-    
-    
-    #myInput {
-        width: 100%;
-        margin: 2px;
-        height: 35px;
-        border-style: solid;
-        border-radius: 4px;
-        border-width: 1px;
-        border-color: #777777;
-        text-indent: 10px;
-        
-    }
-    
-    .less {
-        background-color: cadetblue;
-    }
-    
-    
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow-y: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+<?php include 'header.php';
+?>
 
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 4% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    max-height: 80vh;
-    overflow-y: scroll;
-}
+<link rel="stylesheet" href="style/contrato.css">
 
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-    
-</style>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title> Title </title>
-</head>
-
-	<body>
-        
-        
-<button id="myBtn">Selecionar objetivos</button>
-
-
-<div id="myModal" class="modal">
+ <div id="myModal" class="modal">
 
 
   <div class="modal-content">
@@ -294,25 +121,152 @@ partir das informações fornecidas por estes gráficos/ tabelas.</span>
             </div>
         </div>
     </div>
+
+      <br>
       
       
       
-      
+     <div class="bottom-modal"></div> 
   </div>
 
 </div>
+
+
+<div class="caixa"> 
+                <div class="banner-caixa span-trabalho">
+                <img src="interface-images/icon-02.png">    
+                <span>Contrato de Trabalho</span>
+                </div>
+                </div>
+
+
+                <form>
+                <div class="caixa">
+                    <div class="head-caixa line">
+                    <img src="interface-images/icon-03.png"><span><bold class="bold">Contrato de Trabalho</bold> - Buscando nectar</span>
+                    </div>
+                    <div class="head-data">
+                        Postado em: 08/10/2018
+                    </div>
+                    
+                    
+                   
+<div class="caixa-text">  
+    <div     class="title2 bold">
+        <span><b>Contrato de Trabalho</b></span>
+    </div>
+<br>
+    <div class="title3 bold">            
+            <p>Nome do Contrato:</p>
+    </div>
+<br>
+    <input type="text" name="nome-contrato" class="input-linha">     
+<br>
+
+    <div class="caixa-text escuro">
+        <p class="bold Title2"> Objetivos: </p><br>
+         
+        
+        <div id="objetivo-container" class="rest">
+        
+        </div><br>
+        <div id="myBtn" class="btn-contrato title-londrina modulo">+ Selecionar objetivos</div>
     
         
-        
-        <br>
-        Objetivos
-        <br>
-        <form id="class" class="rest" method="GET">
-        
-        <button type="submit">Enviar</button>
-        </form>
-        
-        <script>
+    
+     
+    </div>
+    <div class="title3 bold">            
+        <p>Método de Entrega:</p>
+    </div>
+    
+<br>
+    
+    <div id="editor" class="richtexteditor">
+    </div>
+    
+<br>
+    
+<div class="title3 bold">            
+        <p>Cor de identificação:</p>
+    </div>
+    <center><br>
+    <label class="labl">
+  <input type="radio" name="cor" value="1" class="radio">
+  <div class="cor1"></div>
+    </label>
+    <label class="labl">
+  <input type="radio" name="cor" value="1" class="radio">
+  <div class="cor2"></div>
+    </label>
+    <label class="labl">
+  <input type="radio" name="cor" value="1" class="radio">
+  <div class="cor3"></div>
+    </label>
+    <label class="labl">
+  <input type="radio" name="cor" value="1" class="radio">
+  <div class="cor4"></div>
+    </label>
+    <label class="labl">
+  <input type="radio" name="cor" value="1" class="radio">
+  <div class="cor5"></div>
+    </label>
+    <label class="labl">
+  <input type="radio" name="cor" value="1" class="radio">
+  <div class="cor6"></div>
+    </label>
+    <label class="labl">
+  <input type="radio" name="cor" value="1" class="radio">
+  <div class="cor7"></div>
+    </label>
+    <label class="labl">
+  <input type="radio" name="cor" value="1" class="radio">
+  <div class="cor8"></div>
+    </label>
+    <label class="labl">
+  <input type="radio" name="cor" value="1" class="radio">
+  <div class="cor9"></div>
+    </label>
+    <label class="labl">
+  <input type="radio" name="cor" value="1" class="radio">
+  <div class="cor10"></div>
+    </label>
+</center>
+    
+    
+    <div class="caixa-text">
+        <span><bold class="bold">Aluno:</bold> João Pão</span>
+    <br>
+        <span><bold class="bold">Mestre:</bold> Letícia Medeiros</span>
+        <button id="enviar" class="button-big title-londrina centro" type="submit">Enviar Proposta</button>
+    </div>
+<!-- Initialize Quill editor -->
+<script>
+  var quill = new Quill('#editor', {
+    theme: 'snow',
+    modules: {
+      toolbar: [
+      
+  ['bold', 'italic', 'underline'],        // toggled buttons
+  ['blockquote'],
+
+  [{ 'list': 'ordered'}, { 'list': 'bullet' }],   
+
+  [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+
+  [{ 'color': [] }],          // dropdown with defaults from theme
+  
+  [{ 'align': [] }],      
+  ['image', 'link', 'video'],
+          ],
+     imageResize: {
+            modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
+        }
+    }
+    });
+</script>
+    
+     <script>
     var selected = 0;        
             
     $(".dropbtn").click(function(){
@@ -348,7 +302,7 @@ partir das informações fornecidas por estes gráficos/ tabelas.</span>
             var $dad = $(this).parent();
             console.log('clicked');
             var filter, a, i;
-            a = $("#class");
+            a = $("#objetivo-container");
             filter = $dad.children("input").val();
             console.log(filter)
             if (a.has('.item')) {
@@ -358,20 +312,20 @@ partir das informações fornecidas por estes gráficos/ tabelas.</span>
                     console.log('ops');
                     } else {
                    
-                    $dad.clone().prependTo("#class");
+                    $dad.clone().prependTo("#objetivo-container");
                 }
             
             }
                 
             } else {
                 console.log('ops2');
-                $dad.clone().prependTo("#class");
+                $dad.clone().prependTo("#objetivo-container");
             }
             
             });
             
             
-            $('#class').delegate('.select','click',function() {
+            $('#objetivo-container').delegate('.select','click',function() {
                 console.log('blob');
                 $(this).parent().remove();
             });
@@ -403,8 +357,24 @@ window.onclick = function(event) {
     }
 }
             
+ $( "#enviar").click(function(){
+            var myEditor = document.querySelector('#editor')
+            var html = myEditor.children[0].innerHTML
+            console.log(html);  
+            });
+
             
             
         </script>
-</body>
-</html>
+    
+    
+    
+                </div>
+                </div>
+</form>
+
+
+
+
+<?php include 'footer.php';
+?>

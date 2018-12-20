@@ -2,8 +2,7 @@
     include 'header.php';
 ?>
 
-
-                <div class="caixa"> 
+            <div class="caixa"> 
                 <div class="banner-caixa span-trabalho">
                 <img src="interface-images/icon-02.png">    
                 <span>Contrato de Trabalho</span>
@@ -171,7 +170,7 @@
                     </div>
                     
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                    <script src="jquery.lineProgressbar.js"></script>
+                    <script src="lineprogress/jquery.lineProgressbar.js"></script>
                     <script>
                         
                     $('#progressbar1').LineProgressbar({
@@ -202,41 +201,6 @@
                     });  
                     </script>
                 </div>
-                
-                <div class="caixa">
-                <div class="contrato-container"> 
-                
-                    <div class="contrato-mini modulo">
-                        
-                    <img class="fundo-contrato">
-                    <img class="notification-icon" src="interface-images/notification-02.png">
-                    <span class="notification title-londrina">2</span>
-                    <span class="contrato-date title-londrina">11/09</span>
-                    <span class="contrato-title title-londrina">Contrato de Inglês</span>
-                    
-                    </div>
-                    
-                    <div class="contrato-mini span-trabalho">
-                        
-                    <img class="fundo-contrato">
-                    <img class="notification-icon" src="interface-images/notification-02.png">
-                    <span class="notification title-londrina">1</span>
-                    <span class="contrato-date title-londrina">11/09</span>
-                    <span class="contrato-title title-londrina">Contrato de Inglês</span>
-                    
-                    </div>
-                    
-                    <div class="contrato-mini span-agenda">
-                        
-                    <img class="fundo-contrato">
-                    
-                    <span class="contrato-date title-londrina">11/09</span>
-                    <span class="contrato-title title-londrina">Estudo sobre robôs de outra galáxia</span>
-                    
-                    </div>
-                    
-                </div>
-                </div>
 
 
 <script>
@@ -252,7 +216,6 @@
             console.log(html);  
             });
             
-</script>
 </script>
 
 <?php 

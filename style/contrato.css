@@ -1,0 +1,339 @@
+.btn-contrato {
+    border: none;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 6px 0px 6px;
+    border-radius: 2px;
+    font-size: 15px;
+    box-shadow: none;
+    color: white;
+    width: 200px;
+    line-height: 30px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    cursor: pointer;
+
+}
+
+.labl {
+    display : inline-block;
+    width: 55px;
+    height: 50px;
+    margin: 4px;
+}
+.labl > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+.labl > input + div{ /* DIV STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.20);
+}
+.labl > input:checked + div{ /* (RADIO CHECKED) DIV STYLES */
+    border: 2px solid rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.cor1 {
+    background-color: #B862D9;
+}
+.cor2 {
+    background-color: #E366E3;
+}
+.cor3 {
+    background-color: #E36666;
+}
+.cor4 {
+    background-color: #FFCC00;
+}
+.cor5 {
+    background-color: #FEFF0D;
+}
+.cor6 {
+    background-color: #074193;
+}
+.cor7 {
+    background-color: #078B93;
+}
+.cor8 {
+    background-color: #7EE044;
+}
+.cor9 {
+    background-color: #4BD36F;
+}
+.cor10 {
+    background-color: #47EAA0;
+}
+
+
+    .item {
+        display: none;
+        border: none;
+        background-color: #fafafa;
+        min-height: 60px;
+        position: relative;
+        width: 98%;
+        border-radius: 4px;
+        margin: 1%;    
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .item span {
+        padding: 10px;
+        padding-top: 20px;
+        padding-left: 15px;
+        display: block;
+        margin-right: 60px;
+        font-size: 13px;
+    }
+    .none {
+        display: none;
+    }
+    
+    body {
+        font-family: sans-serif;
+    }
+    
+    .tituloitem {
+        text-indent: 10px;
+        line-height: 30px;
+        font-weight: bold;
+        color: white;
+        width: 100%;
+        height: 28px;
+        display: block;
+        top: 0;
+        left: 0;
+        position: absolute;
+        border-radius: 4px 4px 0px 0px;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .select {
+        width: 50px;
+        height: 100%;
+        background-color: #5072ff;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 0px 4px 4px 0px;
+        box-shadow: -2px 0px 1px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+    
+    
+    .dropdown-content .select img {
+        width: 30px;
+        position: absolute;
+        top: 50%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    
+    .rest .item {
+        
+    }
+    
+    .rest .select img {
+        width: 30px;
+        position: absolute;
+        top: 50%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .dropbtn {
+        width: 100%;
+        height: 40px;
+        color: white;
+        background-color: #4BD36F;
+        margin: 2px;
+        margin-bottom: 4px;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .dropbtn span {
+        font-weight: bold;
+        line-height: 40px;
+    }
+    
+    
+    #myInput {
+        width: 100%;
+        margin: 2px;
+        height: 35px;
+        border-style: solid;
+        border-radius: 4px;
+        border-width: 1px;
+        border-color: #777777;
+        text-indent: 10px;
+        
+    }
+    
+    .less {
+        background-color: cadetblue;
+    }
+    
+    
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4%;
+    margin-left: 50%; /* 15% from the top and centered */
+    transform: translate(-50%, 0);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    max-height: 80vh;
+    overflow-y: scroll;
+    position: absolute;
+    left: 100px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .modal-content {
+    margin: 4% auto;
+    margin-top: 100px;
+    transform: translate(-50%, 0);
+    width: 80%;
+    max-height: 80vh;
+    left: 50%;
+}
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.bottom-modal {
+
+}
+
+
+
+
+/* MEUS CONTRATOS */
+
+.contrato-mini {
+    text-align: left;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 16px 0px 0px 16px;
+    position: relative;
+    border-radius: 5px;
+    text-shadow: #000 0px 0px 3px;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+}
+
+.fundo-contrato {
+    content: url('../interface-images/icon-02.png');
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+}
+
+.contrato-date {
+    color: white;
+    position: absolute;
+    top: 0%;
+    margin: 10px;
+}
+.contrato-title {
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    margin: 10px;
+    font-size: 22px;
+}
+.notification-icon {
+    width: 60px;
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+}
+
+.notification {
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: white;
+}
+
+
+.contrato-menor {
+    width: 110px;
+    height: 110px;
+    
+}
+
+.contrato-menor {
+    
+}
+.contrato-menor + .notification-icon {
+    left: 90%;
+    top: 10%;
+}
+.contrato-menor + .notification {
+    left: 90%;
+    top: 10%;
+}
+
+@media only screen and (max-width: 1150px) {
+    .contrato-container {
+    text-align: center;
+    }
+    .contrato-mini {
+    width: 130px;
+    height: 130px;
+    margin: 10px 0px 0px 10px;
+    }
+    .notification-icon {
+    left: 90%;
+    top: 10%;
+    }
+    .notification {
+        left: 90%;
+        top: 10%;
+    }
+}

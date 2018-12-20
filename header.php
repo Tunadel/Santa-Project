@@ -4,17 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Include the Quill library -->
-    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    
     <link rel="stylesheet" href="style/trial.css">
     <link rel="stylesheet" href="style/caixa-text.css">
+    
+    <!--Fonte Londrina-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="jquery.lineProgressbar.css">
+
+    <!--Line Progress, pra renderizar os gráficos dos objetivos-->
+    <link rel="stylesheet" href="lineprogress/jquery.lineProgressbar.css">  
+
+    <!--Quill.js a biblioteca de editor de texto, image-resize.js é uma biblioteca pra redimensionar imagem dentro do quill-->
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="image-resize.min.js"></script>
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     
-	<title> MENU TEST </title>
+	<title>Sistema Colméia</title>
 </head>
 
     
@@ -66,9 +75,11 @@ var fechado = 0;
                     <div id="close-button" class="close-button" onclick="fecha()">
                     <img id="img" src="interface-images/hamburg.png" width="35px"></div>
                     </div> 
+                <a href="index.php">
                 <div class="head-logo">
                 <img>
                 </div>
+                </a>
                 <div class="perfil-caixa" onclick="fecha2()"><span>Entrar</span></div>
             </div>   
             
@@ -95,7 +106,7 @@ var fechado = 0;
             <div class="modulo">
             <ul class="span-modulo-fundo">    
                 <br>    
-                <a href="https://www.google.com"><li class="modulo">Matemática 101</li></a>
+                <a href="modulo.php"><li class="modulo">Matemática 101</li></a>
                 <li class="modulo">História 102</li>
                 <li class="modulo">Português 201</li>
                 <li class="modulo">Geografia 105</li>
@@ -107,9 +118,9 @@ var fechado = 0;
             <div class="span-trabalho">
             <ul class="span-modulo-fundo">    
                 <br>    
-                <li class="inside span-trabalho">Meus Contratos</li>
-                <li class="inside span-trabalho">Meus Objetivos</li>
-                <li class="inside span-trabalho">Contratar Trabalho</li>
+                <a href="meuscontratos.php"><li class="inside span-trabalho">Meus Contratos</li></a>
+                <a href="meusobjetivos.php"><li class="inside span-trabalho">Meus Objetivos</li></a>
+                <a href="novocontrato.php"><li class="inside span-trabalho">Contratar Trabalho</li></a>
                 <br>        
             </ul>
             </div>
