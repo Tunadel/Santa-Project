@@ -3,6 +3,7 @@
 
 <link rel="stylesheet" href="style/contrato.css">
 
+
  <div id="myModal" class="modal">
 
 

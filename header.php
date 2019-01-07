@@ -4,12 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
+    
+    <link rel="icon" href="interface-images/icon-03.png">
+    
+     <!--Fonte Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     
     <link rel="stylesheet" href="style/trial.css">
     <link rel="stylesheet" href="style/caixa-text.css">
     
-    <!--Fonte Londrina-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+   
 
     <!--Line Progress, pra renderizar os gráficos dos objetivos-->
     <link rel="stylesheet" href="lineprogress/jquery.lineProgressbar.css">  
@@ -28,12 +35,8 @@
 
     
 <script>
-    
+   
 var fechado = 0;
-            
-            $( "#black-cover" ).click(function() {
-              fecha();
-            });
             
             function fecha(){
             
@@ -102,8 +105,8 @@ var fechado = 0;
         <div class="sidebar-wrapper" id="sidebar-wrapper">
         <div class="sidebar">
         <ul>
-            <span class="modulo">Módulos</span>
-            <div class="modulo">
+            <span class="modulo">Módulos <img id="show_modulo" src="interface-images/icon-05.png"></span>
+            <div class="modulo" id="modulo_corpo">
             <ul class="span-modulo-fundo">    
                 <br>    
                 <a href="modulo.php"><li class="modulo">Matemática 101</li></a>
@@ -137,3 +140,52 @@ var fechado = 0;
         <div id="content" class="content">
             <div id="black-cover" class="black-cover"></div>
             <div class="content-box">
+                
+                
+    <script>
+               
+        
+        $( "#black-cover" ).click(function() {
+              fecha();
+            });
+        
+        
+        
+   var modulo_aberto = 1;
+                    
+   $( "#show_modulo" ).click(function() {
+   
+   if (modulo_aberto == 1){modulo_aberto = 0}
+       else{modulo_aberto = 1};
+   rotatebtn();
+  $( "#modulo_corpo" ).slideToggle( "slow", "swing", function() {
+  
+  });
+});
+
+function rotatebtn() {
+if(modulo_aberto == 0){
+$('#show_modulo').animate(
+{ deg: 180 },
+{
+duration: 600,
+step: function(now) {
+$(this).css({ transform: 'rotate(' + now + 'deg)' });
+}
+}
+);
+}
+if(modulo_aberto == 1){
+$('#show_modulo').animate(
+{ deg: 0 },
+{
+duration: 600,
+step: function(now) {
+$(this).css({ transform: 'rotate(' + now + 'deg)' });
+}
+}
+);
+}
+}
+
+                </script>

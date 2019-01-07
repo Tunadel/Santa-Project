@@ -20,19 +20,16 @@
  <div class="contrato-container"> 
                     
                 
-                    <div class="contrato-mini cor1">
-                        
-                    <img class="fundo-contrato">
+                    <div class="contrato-mini">
+                    <div class="head-contrato cor1"></div>
                     <img class="notification-icon" src="interface-images/notification-02.png">
                     <span class="notification title-londrina">2</span>
                     <span class="contrato-date title-londrina">11/09</span>
                     <span class="contrato-title title-londrina">Contrato de Inglês</span>
-                    
                     </div>
                     
-                    <div class="contrato-mini cor2">
-                        
-                    <img class="fundo-contrato">
+                    <div class="contrato-mini">
+                    <div class="head-contrato cor2"></div>
                     <img class="notification-icon" src="interface-images/notification-02.png">
                     <span class="notification title-londrina">1</span>
                     <span class="contrato-date title-londrina">11/09</span>
@@ -40,13 +37,10 @@
                     
                     </div>
                     
-                    <div class="contrato-mini cor3">
-                        
-                    <img class="fundo-contrato">
-                    
+                    <div class="contrato-mini">    
+                    <div class="head-contrato cor3"></div>
                     <span class="contrato-date title-londrina">11/09</span>
                     <span class="contrato-title title-londrina">Estudo sobre robôs de outra galáxia</span>
-                    
                     </div>
                     
                 </div><br>
@@ -58,36 +52,48 @@
     <div class="contrato-container"> 
      
                 
-                    <div class="contrato-mini contrato-menor cor4">
-                        
-                    <img class="fundo-contrato">
+                    <div class="contrato-mini contrato-menor">
+                    <div class="head-contrato cor4"></div>
                     <img class="notification-icon" src="interface-images/notification-02.png">
                     <span class="notification title-londrina">2</span>
                     <span class="contrato-date title-londrina">12/12</span>
-                    <span class="contrato-title title-londrina">Contrato sobre banana</span>
-                    
+                    <span class="contrato-title-menor title-londrina">Contrato sobre banana</span>
                     </div>
         
-                    <div class="contrato-mini contrato-menor cor5">
-                        
-                    <img class="fundo-contrato">
+                    <div class="contrato-mini contrato-menor">
+                    <div class="head-contrato cor5"></div>    
                     <img class="notification-icon" src="interface-images/notification-02.png">
                     <span class="notification title-londrina">2</span>
                     <span class="contrato-date title-londrina">12/12</span>
-                    <span class="contrato-title title-londrina">Contrato sobre banana</span>
-                    
+                    <span class="contrato-title-menor title-londrina">Contrato sobre banana</span>
                     </div>
         
-                    <div class="contrato-mini contrato-menor cor6">
-                        
-                    <img class="fundo-contrato">
+                    <div class="contrato-mini contrato-menor">
+                    <div class="head-contrato cor6"></div>    
                     <img class="notification-icon" src="interface-images/notification-02.png">
                     <span class="notification title-londrina">2</span>
                     <span class="contrato-date title-londrina">12/12</span>
-                    <span class="contrato-title title-londrina">Contrato sobre banana</span>
-                    
+                    <span class="contrato-title-menor title-londrina">Contrato sobre banana</span>
+                    </div>
+        
+                    <div class="contrato-mini contrato-menor">
+                    <div class="head-contrato cor7"></div>    
+                    <img class="notification-icon" src="interface-images/notification-02.png">
+                    <span class="notification title-londrina">2</span>
+                    <span class="contrato-date title-londrina">12/12</span>
+                    <span class="contrato-title-menor title-londrina">Contrato sobre banana</span>
+                    </div>
+        
+    
+                    <div class="contrato-menor contrato-mini ">
+                    <div class="head-contrato cor8"></div>    
+                    <img class="notification-icon" src="interface-images/notification-02.png">
+                    <span class="notification title-londrina">2</span>
+                    <span class="contrato-date title-londrina">12/12</span>
+                    <span class="contrato-title-menor title-londrina">Contrato sobre banana</span>
                     </div>
     </div>
+    <br>
     
     
     

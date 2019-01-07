@@ -50,6 +50,11 @@ a {
     text-decoration: none;
 }
 
+@font-face {
+    font-family: 'Londrina book';
+    src: url('webfonts/385E84_1_0.eot');
+    src: url('webfonts/385E84_1_0.eot?#iefix') format('embedded-opentype'), url('webfonts/385E84_1_0.woff2') format('woff2'), url('webfonts/385E84_1_0.woff') format('woff'), url('webfonts/385E84_1_0.ttf') format('truetype');
+}
 
 .head {
     position: fixed;
@@ -60,12 +65,12 @@ a {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.20);
 }
 
-.close-button img{
+.close-button img {
     cursor: pointer;
     padding: 10px;
 }
 
-.close-button img:hover{
+.close-button img:hover {
     background-color: rgba(0, 0, 0, 0.20);
 }
 
@@ -77,21 +82,22 @@ a {
     transform: translate(-50%, 0);
 }
 
-.head-logo img{
+.head-logo img {
     content: url("../interface-images/colegiologobranco.png");
     height: 40px;
     padding: 5px;
-    
+
 }
 
 
-.banner-caixa img{
+.banner-caixa img {
     width: 75px;
     padding: 15px 20px 15px 20px;
     display: block;
 }
-.banner-caixa span{
-    font-family: 'Londrina Solid', cursive;
+
+.banner-caixa span {
+    font-family: 'Londrina Solid', sans-serif;
     color: white;
     font-size: 40px;
     letter-spacing: 2px;
@@ -101,7 +107,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
-    
+
 }
 
 .perfil-caixa {
@@ -114,34 +120,42 @@ a {
     background-color: blue;
     height: 100%;
     text-align: center;
-    font-family: 'Londrina Solid', cursive;
+    font-family: 'Londrina Solid', sans-serif;
     font-size: 25px;
     cursor: pointer;
-    
-    
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+
+
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#66000000', GradientType=0);
+    /* IE6-9 */
+
 }
 
-.perfil-caixa span{
+.perfil-caixa span {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.perfil-caixa:hover{
+.perfil-caixa:hover {
     
-    
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.55) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,0.55) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,0.55) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#8c000000',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.55) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.55) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.55) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#8c000000', GradientType=0);
+    /* IE6-9 */
 }
 
 
 
-.perfil-caixa span{
+.perfil-caixa span {
     top: 25%;
     position: relative;
     transform: translate(0, 50%);
@@ -168,15 +182,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.30);
 }
 
+.modulo img {
+    display: block;
+    right: 10px;
+    position: absolute;
+    top: 14px;
+    width: 26px;
+}
 
 .close-button {
     width: 35px;
 }
 
-.sidebar-wrapper span{
+.sidebar-wrapper span {
     cursor: pointer;
     text-align: center;
-    font-family: 'Londrina Solid', cursive;
+    font-family: 'Londrina Solid', sans-serif;
     color: white;
     font-size: 18px;
     letter-spacing: 1px;
@@ -190,8 +211,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     padding-bottom: 15px;
 }
 
-.sidebar-wrapper span:hover{
-}
+.sidebar-wrapper span:hover {}
 
 
 .span-modulo-fundo li {
@@ -209,7 +229,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     font-size: 15px;
     line-height: 35px;
     letter-spacing: 2px;
-    font-family: 'Londrina book', cursive;
+    font-family: 'Londrina book', sans-serif;
     cursor: pointer;
 }
 
@@ -224,7 +244,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     border-right: none;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
     text-shadow: 0px 0px 5px rgba(50, 0, 0, 0.4);
-    line-height: 32px;    
+    line-height: 32px;
 }
 
 .span-modulo-fundo li:active {
@@ -242,7 +262,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     z-index: 5;
     margin-top: -5px;
     margin-bottom: 4px;
-    background-color: rgba(0, 0, 0, 0.25); 
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 
@@ -260,7 +280,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     z-index: 2;
     border-radius: 0px 0px 2px 2px;
     overflow-y: hidden;
-    
+
 }
 
 .perfil-box input {
@@ -282,7 +302,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     color: white;
     font-size: 25px;
     background-color: #21a85b;
-    font-family: 'Londrina solid', cursive;
+    font-family: 'Londrina solid', sans-serif;
     letter-spacing: 2px;
     height: 40px;
     cursor: pointer;
@@ -293,7 +313,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 2px;
-    font-family: 'Londrina book', cursive;
+    font-family: 'Londrina book', sans-serif;
     margin-left: 30px;
 }
 
@@ -302,7 +322,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     font-size: 30px;
     line-height: 30px;
     letter-spacing: 2px;
-    font-family: 'Londrina Solid', cursive;
+    font-family: 'Londrina Solid', sans-serif;
     text-align: center;
 }
 
@@ -334,8 +354,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 
 
-
-
 .caixa {
     margin-left: 50%;
     transform: translate(-50%, 0);
@@ -350,85 +368,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     font-family: 'Open Sans', sans-serif;
 }
 
-.completo {
-    background-color: #66b553;
-}
 
-
-.classificacao {
-    margin-bottom: 3px;
-}
-
-.objetivo {
-    width: 100%;
-    min-height: 45px;
-    background-color: white;
-    position: relative;
-    box-sizing: content-box;
-    cursor: pointer;
-}
-
-
-.objetivo-desc {
-    display: inline-block;
-    width: 76%;
-    margin: 7px 3% 8px 3%;
-    font-size: 13px;
-    
-}
-
-.objetivo-contrato {
-    display: inline-block;
-    width: 6%;
-    height: 100%;
-    left: 82%;
-    box-sizing: border-box;
-    position: absolute;
-    border-left: solid 1.5px #626262;
-    
-}
-
-.objetivo-mais {
-    padding: 6px 10px 10px 10px;
-    background-color: white;
-    display: none;
-    font-size: 11px;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.30);
-    border-radius: 0px 0px 4px 4px;
-}
-.objetivo-contrato img {
-    content: url('../interface-images/icon-04.png');
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.outline {
-    border: solid 1.5px #626262;
-    border-radius: 6px;
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left:0;
-    bottom: 0;
-    right: 0;
-    box-sizing: border-box;
-}
-
-.objetivo-sign {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 12%;
-    height: 100%;
-    border-radius: 0px 6px 6px 0px;
-    border-left: solid 1.5px #626262;
-    box-sizing: border-box;
-}
 .caixa-invisivel {
     margin-left: 50%;
     transform: translate(-50%, 0);
@@ -470,9 +410,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 
 .direita {
-  right: 0;  
+    right: 0;
     transform: translate(-100%, 0);
 }
+
 .button-big {
     width: 300px;
     height: 50px;
@@ -505,7 +446,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     border: none;
     box-shadow: 0px 2px 6px inset rgba(0, 0, 0, 0.4);
     text-shadow: 0px 0px 5px rgba(50, 0, 0, 0.4);
-    
+
 }
 
 .escuro {
@@ -514,24 +455,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 
 
-.modulo{background-color: #4BD36F}
-.span-trabalho{background-color: #078B93}
-.span-agenda{background-color: #E36666}
-.span-biblioteca{background-color: #B862D9}
+.modulo {
+    background-color: #4BD36F
+}
+
+.span-trabalho {
+    background-color: #078B93
+}
+
+.span-agenda {
+    background-color: #E36666
+}
+
+.span-biblioteca {
+    background-color: #B862D9
+}
 
 
 @media only screen and (max-width: 400px) {
     .head-logo {
-        display: none;
+        
     }
 }
+
 @media only screen and (max-width: 700px) {
-    .head-logo img{
-    content: url(../interface-images/colegiologopequeno.png);
+    .head-logo img {
+        content: url(../interface-images/colegiologopequeno.png);
     }
-    .banner-caixa span{
-    left: 130px;
-    transform: translate(0, -50%);
+
+    .banner-caixa span {
+        left: 130px;
+        transform: translate(0, -50%);
     }
 }
 
@@ -539,24 +493,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     .caixa {
         width: 98%;
     }
+
     .perfil-caixa {
-       right: 0; 
+        right: 0;
     }
-    
+
 }
+
 @media only screen and (min-width: 1150px) {
     .content-box {
-     margin-left: 250px;
+        margin-left: 250px;
     }
+
     #sidebar-wrapper {
         width: 250px;
     }
+
     #close-button {
         display: none;
     }
+
     .head-logo {
-     left: 50px;
-    transform: translate(0, 0);
+        left: 50px;
+        transform: translate(0, 0);
     }
-    
+
 }

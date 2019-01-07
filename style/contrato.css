@@ -252,32 +252,32 @@
     display: inline-block;
     width: 150px;
     height: 150px;
-    margin: 16px 0px 0px 16px;
+    margin: 16px 0 0 16px;
     position: relative;
     border-radius: 5px;
-    text-shadow: #000 0px 0px 3px;
-    -webkit-font-smoothing: antialiased;
     cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
 }
 
-.fundo-contrato {
-    content: url('../interface-images/icon-02.png');
-    width: 95%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.3;
+.head-contrato {
+    height: 40px;
+    width: 100%;
+    display: block;
+    border-radius: 4px 4px 0px 0px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
 .contrato-date {
     color: white;
     position: absolute;
     top: 0%;
-    margin: 10px;
+    margin: 8px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35);
+
 }
 .contrato-title {
-    color: white;
+    color: #1e1e1e;
     position: absolute;
     bottom: 0%;
     margin: 10px;
@@ -304,29 +304,27 @@
 .contrato-menor {
     width: 110px;
     height: 110px;
-    
 }
 
-.contrato-menor {
-    
-}
-.contrato-menor + .notification-icon {
-    left: 90%;
-    top: 10%;
-}
-.contrato-menor + .notification {
-    left: 90%;
-    top: 10%;
-}
+.contrato-title-menor {
+    color: #1e1e1e;
+    position: absolute;
+    bottom: 0%;
+    margin: 8px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    }
 
 @media only screen and (max-width: 1150px) {
     .contrato-container {
-    text-align: center;
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
     }
     .contrato-mini {
     width: 130px;
     height: 130px;
-    margin: 10px 0px 0px 10px;
+    margin: 10px;
     }
     .notification-icon {
     left: 90%;
@@ -335,5 +333,8 @@
     .notification {
         left: 90%;
         top: 10%;
+    }
+    .contrato-title {
+        font-size: 20px;
     }
 }
