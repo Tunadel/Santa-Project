@@ -38,38 +38,6 @@
     border-radius: 4px;
 }
 
-.cor1 {
-    background-color: #B862D9;
-}
-.cor2 {
-    background-color: #E366E3;
-}
-.cor3 {
-    background-color: #E36666;
-}
-.cor4 {
-    background-color: #FFCC00;
-}
-.cor5 {
-    background-color: #FEFF0D;
-}
-.cor6 {
-    background-color: #074193;
-}
-.cor7 {
-    background-color: #078B93;
-}
-.cor8 {
-    background-color: #7EE044;
-}
-.cor9 {
-    background-color: #4BD36F;
-}
-.cor10 {
-    background-color: #47EAA0;
-}
-
-
     .item {
         display: none;
         border: none;
@@ -337,4 +305,85 @@
     .contrato-title {
         font-size: 20px;
     }
+}
+
+
+.button-medium {
+    min-width: 180px;
+    height: 40px;
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+    font-family: 'Londrina Solid';
+    color: white;
+    font-size: 20px;
+    border-left: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.button-medium:hover {
+    border-style: solid;
+    border-color: rgb(50, 50, 50, 0.30);
+    border-width: 5px;
+    border-radius: 4px 3px 4px 0px;
+    border-left: 4px solid rgba(255, 255, 255, 0.50);
+    border-top: none;
+    border-right: none;
+    box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 5px rgba(50, 0, 0, 0.4);
+    line-height: 29px;
+}
+
+.button-medium:active {
+    transition: .3s;
+    border-left: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    box-shadow: 0px 2px 6px inset rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 5px rgba(50, 0, 0, 0.4);
+
+}
+.button-medium:focus{outline: none}
+
+.objetivo-check {
+    
+}
+
+.objetivo-check input{
+    width: 20px;
+    height: 20px;
+    margin: none;
+    display: inline-block;
+}
+
+.objetivo-check label{
+    cursor: pointer;
+    user-select: none; /* Standard syntax */
+}
+.objetivo-check span{
+    width: 150px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+
+.aluno_page {
+    height: 150px;
+}
+.aluno_page span{
+   font-weight: bold;
+ display: block;
+    vertical-align: top;
+}
+
+.aluno_page img{
+    float: right;
+    width: 150px;
 }

@@ -144,19 +144,15 @@ partir das informações fornecidas por estes gráficos/ tabelas.</span>
                 <form>
                 <div class="caixa">
                     <div class="head-caixa line">
-                    <img src="interface-images/icon-03.png"><span><bold class="bold">Contrato de Trabalho</bold> - Buscando nectar</span>
+                    <img src="interface-images/icon-03.png"><span><bold class="bold">Contrato de Trabalho</bold> - Novo Contrato</span>
                     </div>
                     <div class="head-data">
-                        Postado em: 08/10/2018
+                        Data: 15/01/2019
                     </div>
                     
                     
                    
 <div class="caixa-text">  
-    <div     class="title2 bold">
-        <span><b>Contrato de Trabalho</b></span>
-    </div>
-<br>
     <div class="title3 bold">            
             <p>Nome do Contrato:</p>
     </div>
@@ -183,7 +179,7 @@ partir das informações fornecidas por estes gráficos/ tabelas.</span>
     
 <br>
     
-    <div id="editor" class="richtexteditor">
+    <div id="editor" class="richtexteditor" style="min-height: 150px">
     </div>
     
 <br>
@@ -233,12 +229,26 @@ partir das informações fornecidas por estes gráficos/ tabelas.</span>
   <div class="cor10"></div>
     </label>
 </center>
+    <br>
+    <div class="title3 bold">            
+        <p>Data de Entrega:</p>
+    </div><br>
+        <div>
+    <input type="date">
+    </div>
     
+    <br>
+    <div class="title3 bold">            
+        <p>Professor Mestre:</p>
+    </div><br>
+        <div>
+    <input type="date">
+    </div>
     
     <div class="caixa-text">
+        
+        
         <span><bold class="bold">Aluno:</bold> João Pão</span>
-    <br>
-        <span><bold class="bold">Mestre:</bold> Letícia Medeiros</span>
         <button id="enviar" class="button-big title-londrina centro" type="submit">Enviar Proposta</button>
     </div>
 <!-- Initialize Quill editor -->

@@ -32,7 +32,7 @@
     <div class="container">
         
         
-    <div class="caixa-text plano-aula escuro">
+    <div class="caixa-text  escuro">
         
         
     <span class="title3">Conteúdo do Módulo</span>
@@ -61,15 +61,57 @@
         
     </div>
         
-    <div class="caixa-text professor-plano-aula">
-    <img src="interface-images/mat.png">
-    <span>
-    Prof. Victor Silva
-    </span>
-    </div>
+
     
     </div>
     <br>
+</div>
+
+<div class="caixa">
+<span class="title3" style="margin: 15px 0px 0px 15px">Alunos inscritos no módulo:</span><br>
+<div class="aluno-modulo-container">
+    <div class="aluno-modulo">
+    <img src="interface-images/blob.png">    
+    <span>Mateus Cardoso de Medeiros Bolacha</span>
+    <u>Ir para Aluno</u>
+    </div>
+     <div class="aluno-modulo">
+    <img src="interface-images/blob.png">    
+    <span>Mateus Cardoso de Medeiros Bolacha</span>
+    <u>Ir para Aluno</u>
+    </div>
+     <div class="aluno-modulo">
+    <img src="interface-images/blob.png">    
+    <span>Mateus Cardoso de Medeiros Bolacha</span>
+    <u>Ir para Aluno</u>
+    </div>
+     <div class="aluno-modulo">
+    <img src="interface-images/blob.png">    
+    <span>Mateus Cardoso de Medeiros Bolacha</span>
+    <u>Ir para Aluno</u>
+    </div>
+    <div class="aluno-modulo">
+    <img src="interface-images/blob.png">    
+    <span>Mateus Cardoso de Medeiros Bolacha</span>
+    <u>Ir para Aluno</u>
+    </div>
+     <div class="aluno-modulo">
+    <img src="interface-images/blob.png">    
+    <span>Mateus Cardoso de Medeiros Bolacha</span>
+    <u>Ir para Aluno</u>
+    </div>
+     <div class="aluno-modulo">
+    <img src="interface-images/blob.png">    
+    <span>Mateus Cardoso de Medeiros Bolacha</span>
+    <u>Ir para Aluno</u>
+    </div>
+     <div class="aluno-modulo">
+    <img src="interface-images/blob.png">    
+    <span>Mateus Cardoso de Medeiros Bolacha</span>
+    <u>Ir para Aluno</u>
+    </div>
+</div>
+<br>
 </div>
 
 <div class="caixa"> 
@@ -79,57 +121,15 @@
 </div>
 
 <div class="caixa blank">
-    <button class="button-big title-londrina">Criar novo post +</button>
+    <a href="novopost.php"><button class="button-big title-londrina">Criar novo post +</button></a>
 </div>
 
-<div class="caixa">
-    <div class="head-caixa line">
-    <img src="interface-images/mat.png"><span>Novo Post</span>
-    <button class="btn-modulo apagar">Apagar</button>
-    </div>
-    <div class="head-data">
-    
-    </div>
 
-    <div class="caixa-text">    
-    <input type="text" class="input-linha" placeholder="Título Post">     
-    <br>
-    <br>
-    <div id="editor2" class="richtexteditor">
-    </div>
-    
-    </div>    
-    <script>
-      var quill = new Quill('#editor2', {
-        theme: 'snow'
-        });
-    </script>
-    
-    <div class="forum-bottom">
-    <div class="checkinputs-modulo">   
-    <input type="checkbox" name="post" value="huey">
-    <span>Permitir edição</span>
-    </div>
-    <div class="checkinputs-modulo">       
-    <input type="checkbox" name="post" value="huey">
-    <span>Fixar Post</span>
-    </div>
-    <div class="checkinputs-modulo">   
-    <input type="checkbox" name="post" value="huey">
-    <span>Permitir respostas</span>
-    </div>    
-    <div class="checkinputs-modulo">   
-    <input type="checkbox" name="post" value="huey">
-    <span>Permitir múltiplas respostas</span>
-    </div>     
-    <button class="btn-modulo enviar">Enviar</button>
-    </div>
-</div>
 
-    <div class="caixa" data-value="1">
+    <div class="caixa" data-value="105">
         <div class="head-caixa line"> 
         <img src="interface-images/mat.png"><span>Título Post</span> 
-        <button class="btn-modulo mostrar">Editar</button>
+        <a href="editarpost.php"><button class="btn-modulo editar">Editar</button></a>
         </div>
         <div class="head-data">
         Postado em: 08/10/2018
@@ -142,14 +142,15 @@
         <span class="title3">
             <bold class="bold">Autor:</bold> Victor Silva
         </span>
-        <button id="post1" class="btn-modulo mostrar">Mostrar +</button>
+        <button id="post1" class="btn-modulo mostrar">Mostrar respostas +</button>
         </div>
     </div>
 
-<div class="caixa-resposta" data-father="1">
+
+<div class="caixa-resposta" data-father="105">
     <div class="head-caixa line">
-    <img src="interface-images/mat.png"><span>Resposta: Título Post</span>
-    <button class="btn-modulo apagar">Apagar</button>
+    <img src="interface-images/blob.png"><span>Resposta: Título Post</span>
+    <a href="editarresposta.php"><button class="btn-modulo editar">Editar</button></a>
     </div>
     <div class="head-data">
     Postado em: 08/10/2018
@@ -166,7 +167,9 @@
     </div>
 </div>
 
-<div class="caixa-resposta" data-father="1">
+
+
+<div class="caixa-resposta" data-father="105">
     <div class="head-caixa line">
     <img src="interface-images/mat.png"><span>Escrever Resposta: Título Post</span>
     </div>
@@ -176,43 +179,39 @@
 
     <div class="caixa-text">
     
-    <div id="editor" class="richtexteditor">
+    <div id="editor" class="richtexteditor" style="min-height: 150px">
     </div>
     
     </div>    
     <script>
       var quill = new Quill('#editor', {
-        theme: 'snow'
-        });
+    theme: 'snow',
+    modules: {
+      toolbar: [
+      
+  ['bold', 'italic', 'underline'],        // toggled buttons
+  ['blockquote'],
+
+  [{ 'list': 'ordered'}, { 'list': 'bullet' }],   
+
+  [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+
+  [{ 'color': [] }],          // dropdown with defaults from theme
+  
+  [{ 'align': [] }],      
+  ['image', 'link', 'video'],
+          ],
+     imageResize: {
+            modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
+        }
+    }
+    });
     </script>
     
     <div class="forum-bottom">
     <button class="btn-modulo enviar">Enviar</button>
     </div>
 </div>
-
-<div class="caixa">
-        <div class="head-caixa line"> 
-        <img src="interface-images/mat.png"><span>Título Post</span> 
-        <button class="btn-modulo mostrar">Editar</button>
-        </div>
-        <div class="head-data">
-        Postado em: 08/10/2018
-        </div>
-        <div class="caixa-text escuro">
-            <p class="title3">Conteúdo Post</p><br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </div>
-        <div class="forum-bottom">
-        
-        <span class="title3">
-            <bold class="bold">Autor:</bold> Victor Silva
-        </span>
-            
-        <button class="btn-modulo mostrar">Mostrar +</button>
-        </div>
-    </div>
-
 
 
 <script>
@@ -226,10 +225,10 @@
                $(this).toggle(); 
             }
         });
-        if ($obj.text() == "Mostrar +") {
-            $obj.text("Mostrar -");
-        } else if ($obj.text() == "Mostrar -") {
-            $obj.text("Mostrar +");
+        if ($obj.text() == "Mostrar respostas +") {
+            $obj.text("Esconder respostas -");
+        } else if ($obj.text() == "Esconder respostas -") {
+            $obj.text("Mostrar respostas +");
         }
 });
 </script>

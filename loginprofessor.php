@@ -212,52 +212,9 @@ var fechado = 0;
         </header>
                
         <div class="perfil-box" id="perfil-box">
-            <br>
-            <?php 
-            if (!isset($_SESSION['username'])){
-                include 'connection/loginform.php';
-            } else {
-                include 'connection/perfil.php';
-            }
-            ?>
-            
+           
             </div>
             
-        <div class="sidebar-wrapper" id="sidebar-wrapper">
-        <div class="sidebar">
-        <ul>
-            <span class="modulo"><a class="notlink" href="meusmodulos.php">Módulos</a><img class="arrow" id="show_modulo" src="interface-images/icon-05.png"></span>
-            <div class="modulo" id="modulo_corpo">
-            <ul class="span-modulo-fundo">    
-                <br>    
-                <a href="modulo.php"><li class="modulo">Geografia 101</li></a>
-                <li class="modulo">História 102</li>
-                <li class="modulo">Português 201</li>
-                <li class="modulo">Matemática 105</li>
-                <li class="modulo">Inglês 202</li>
-                <li class="modulo">Espanhol 101</li>
-                
-                <br>        
-            </ul>
-            </div>
-            <span class="span-trabalho">Trabalho Personalizado</span>
-            <div class="span-trabalho">
-            <ul class="span-modulo-fundo">    
-                <br>    
-                <a href="meuscontratos.php"><li class="inside span-trabalho">Meus Contratos</li></a>
-                <a href="meusobjetivos.php"><li class="inside span-trabalho">Meus Objetivos</li></a>
-                <a href="novocontrato.php"><li class="inside span-trabalho">Contratar Trabalho</li></a>
-                <br>        
-            </ul>
-            </div>
-            <span class="span-agenda">Agenda</span>
-            <br><br><br>
-        </ul>
-            
-            
-            </div>
-            
-        </div>
         
         
         <div id="content" class="content">
@@ -314,3 +271,29 @@ $(this).css({ transform: 'rotate(' + now + 'deg)' });
 }
 
                 </script>
+                
+                
+                
+            <div class="caixa" style="max-width: 410px">
+            <div class="caixa-text">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="formprofessor">
+            <span class="title-londrinabook">Entrar como Professor</span><br><br>
+            <span class="title3">Login</span>
+            <input name="username">
+            <span class="help-block"><?php echo $username_err; ?></span><br>
+            <span class="title3">Senha</span>
+            <input type="password" name="password">
+            <span class="help-block"><?php echo $password_err; ?></span>
+            <button type="submit" class="button-big title-londrinabook  cor9" value="submit">Entrar</button>
+            </form>
+                    
+                </div>
+                 </div>
+                
+                
+                
+<?php 
+    include 'footer.php';
+?>
+                
+

@@ -85,9 +85,7 @@
 }
 
 
-.plano-aula {
-    width: 70%;
-}
+
 
 .professor-plano-aula {
     width: 15%;
@@ -136,11 +134,18 @@
     border-radius: 2px;
     font-size: 15px;
     box-shadow: none;
+    box-sizing: border-box;
     color: white;
-    
     height: 30px;
     font-family: 'Open Sans', sans-serif;
     font-weight:bold;
+}
+
+
+.btn-modulo:hover{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.40);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
+    line-height: 30px;
 }
 
 .apagar {
@@ -152,6 +157,11 @@
 }
 
 .mostrar {
+    background-color: #078B93;
+    margin: 10px 6px 0px 6px;
+}
+
+.editar {
     background-color: #078B93;
 }
 
@@ -178,17 +188,41 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.blank {
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
+
+.modulo-box {
+    display: inline-block;
+    width: 284px;
+    background-color: white;
+    margin: 0px 0px 10px 10px;
+    vertical-align: top;
+    min-height: 290px;
+    position: relative;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    border-radius: 2px;
 }
+
+
+
+
 
 @media only screen and (max-width: 1150px) {
     .caixa-resposta {
          width: 87%;
     }
 }
+
+@media only screen and (max-width: 605px) {
+    .modulo-container {
+    text-align: center;
+}
+    .caixa-resposta {
+    transform: translate(-50%, 0);
+    width: 98%;
+    }
+}
 @media only screen and (max-width: 500px) {
+    
     .banner-modulo span{
     font-size: 30px;
     text-align: center;
@@ -205,10 +239,170 @@
     .disciplina-modulo span {
     font-size: 13px;
     }
+    
 }
 
 @media only screen and (max-width: 340px) {
    .canto-direito {
         left: 15%;
     } 
+}
+
+.modulo-box-dia {
+    width: 100%;
+    color: white;
+    height: 35px;
+    font-family: 'londrina solid';
+    font-size: 20px;
+    border-radius: 2px 2px 0px 0px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.modulo-box-dia span {
+    margin-left: 20px;
+    line-height: 35px;
+}
+
+.modulo-box-codigo {
+    width: 100%;
+    color: white;
+    height: 50px;
+    font-family: 'londrina solid';
+    font-size: 30px;
+    border-radius: 2px 2px 0px 0px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.modulo-box-codigo span {
+    margin-left: 20px;
+    line-height: 50px;
+}
+
+.modulo-box-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modulo-box-conteudo {
+    margin-bottom: 30px;
+}
+
+.modulo-box-container {
+    padding: 10px;
+}
+
+.modulo-box-label {
+    display: block;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.modulo-box-radio {
+  background-color: brown;
+  border: none;
+  height: 25px;
+  width: 25px;
+}
+
+.checkmark {
+    box-sizing: border-box;
+    display: block;
+    border-bottom: 2px solid #727272;
+    width: 120px;
+    height: 30px;
+    background-color: #eee;
+    border-radius: 4px;
+    line-height: 28px;
+    text-align: center;
+    content: 'Uu';
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.btn-ir-modulo {
+    display: block;
+    padding: 6px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+    color: white;
+    font-weight: bold;
+}
+
+
+.checkmark:hover {
+    border-bottom: 3px solid rgba(24, 34, 20, 0.72);
+    line-height: 25px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.40);
+
+}
+
+.modulo-box-label input:checked + .checkmark {
+    transition: 0.5s;
+    background-color: #60c164;
+    font-weight: bold;
+    color: white;
+}
+
+.modulo-box-label input{
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.modulo-container {
+    
+}
+
+
+
+.aluno-modulo {
+
+margin: 6px 0px 0px 6px;
+width: 175px;
+height: 90px;
+
+border-radius: 4px;
+position: relative;
+display: inline-block;
+}
+.aluno-modulo span{
+float: right;
+font-size: 12px;
+font-weight: bold;
+display: inline;
+width: 76px;
+margin: 5px 5px 5px 2px;
+line-height: 12px;
+}
+
+.aluno-modulo u{
+float: right;
+color: dodgerblue;
+font-size: 11px;
+display: block;
+width: 100px;
+position: absolute;
+top: 74px;
+right: 10px;
+text-align: right;
+cursor: pointer;
+user-select: none;
+}
+
+.aluno-modulo img{
+    width: 80px;
+    display: inline;
+    margin: 3px 3px 3px 3px;
+    border: 2px solid rgba(0,0,0,0.15);
+
+}
+
+.aluno-modulo-container {
+    
 }

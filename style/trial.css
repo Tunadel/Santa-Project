@@ -20,7 +20,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -123,7 +123,7 @@ a {
     font-family: 'Londrina Solid', sans-serif;
     font-size: 25px;
     cursor: pointer;
-
+    user-select: none;
 
     background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
     /* FF3.6-15 */
@@ -182,7 +182,7 @@ a {
     box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.30);
 }
 
-.modulo img {
+.arrow {
     display: block;
     right: 10px;
     position: absolute;
@@ -270,7 +270,7 @@ a {
 .perfil-box {
     display: none;
     margin-top: 50px;
-    transition: height 1.5s ease-in;
+    transition: 1.5s ease-in;
     position: fixed;
     height: auto;
     right: 10px;
@@ -291,6 +291,18 @@ a {
     height: 30px;
     border-radius: 2px;
     text-indent: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.perfil-box img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 3px;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 2px rgba(0,0,0,0.2);
 }
 
 .perfil-box .btn {
@@ -298,23 +310,43 @@ a {
     width: 80%;
     margin-left: 10%;
     border: none;
-    border-radius: 2px;
+    border-radius: 5px 2px 5px 0px;
     color: white;
     font-size: 25px;
-    background-color: #21a85b;
-    font-family: 'Londrina solid', sans-serif;
-    letter-spacing: 2px;
+    font-family: 'Londrina Solid', sans-serif;
+    letter-spacing: 1px;
     height: 40px;
     cursor: pointer;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    box-shadow: -1px 2px 2px rgba(0,0,0,0.3);
+    position: relative;
 }
+
+.perfil-box .btn:hover{
+    transition: 0.5s;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 4px solid rgba(0,0,0,0.3);
+    box-shadow: -1px 4px 2px rgba(0,0,0,0.3);
+}
+
+.perfil-box .btn:active{
+    transition: 0.5s;
+    border-left: none;
+    border-bottom: none;
+    box-shadow: inset 2px 4px 2px rgba(0,0,0,0.3);
+    outline: none;
+}
+.perfil-box .btn:focus {outline:0;}
 
 .perfil-box label {
     color: white;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 20px;
     letter-spacing: 2px;
     font-family: 'Londrina book', sans-serif;
     margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
 }
 
 .perfil-box p {
@@ -324,6 +356,7 @@ a {
     letter-spacing: 2px;
     font-family: 'Londrina Solid', sans-serif;
     text-align: center;
+    text-shadow: 2px 1px 2px rgba(0,0,0,0.3);
 }
 
 
@@ -454,6 +487,11 @@ a {
     border-radius: 4px;
 }
 
+.blank {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+
 
 .modulo {
     background-color: #4BD36F
@@ -470,6 +508,39 @@ a {
 .span-biblioteca {
     background-color: #B862D9
 }
+
+
+.cor1 {
+    background-color: #B862D9;
+}
+.cor2 {
+    background-color: #E366E3;
+}
+.cor3 {
+    background-color: #E36666;
+}
+.cor4 {
+    background-color: #FFCC00;
+}
+.cor5 {
+    background-color: #E79D29;
+}
+.cor6 {
+    background-color: #074193;
+}
+.cor7 {
+    background-color: #078B93;
+}
+.cor8 {
+    background-color: #7EE044;
+}
+.cor9 {
+    background-color: #4BD36F;
+}
+.cor10 {
+    background-color: #47EAA0;
+}
+
 
 
 @media only screen and (max-width: 400px) {
@@ -518,4 +589,50 @@ a {
         transform: translate(0, 0);
     }
 
+}
+.modulo a{
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+#modulo_corpo {
+    display: none;
+}
+
+
+.perfilbox-link {
+    float: right; 
+    margin: 4px 0px 6px 0px;
+    padding-bottom: 2px;
+}
+
+.perfilbox-link label {
+    border-bottom: 1.5px solid #fff; 
+    padding: 1px;
+    cursor: pointer;
+}
+
+.help-block {
+    margin: 4px;
+    margin-left: 30px;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.formprofessor {
+    margin: 20px 0px;
+    text-align: left;
+}
+
+.formprofessor input {
+    width: 100%;
+    height: 30px;
+    border: 1.5px solid rgba(0,0,0,0.3);
+    text-indent: 10px;
+    font-size: 14px;
+}
+.formprofessor span {
+    display: inline-block;
+    font-weight: bold;
 }
